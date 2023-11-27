@@ -1,0 +1,174 @@
+
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.wrapper {
+    max-width: 350px;
+    min-height: 500px;
+    margin: 80px auto;
+    padding: 40px 30px 30px 30px;
+    border: 2px solid #039BE5;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.logo {
+    width: 80px;
+    margin: auto;
+}
+
+.logo img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.wrapper .name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    padding-left: 10px;
+    color: #555;
+}
+
+.wrapper .form-field input {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 10px 15px 10px 10px;
+    /* border: 1px solid red; */
+}
+
+.wrapper .form-field {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border:2px solid #039BE5;
+    /* box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff; */
+}
+
+.wrapper .form-field .fas {
+    color: #555;
+}
+
+.wrapper .btn {
+    box-shadow: none;
+    width: 100%;
+    height: 40px;
+    background-color: #03A9F4;
+    color: #fff;
+    border-radius: 25px;
+    /* box-shadow: 3px 3px 3px #b1b1b1,
+        -3px -3px 3px #fff; */
+    letter-spacing: 1.3px;
+}
+
+.wrapper .btn:hover {
+    background-color: #039BE5;
+}
+
+.wrapper a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #03A9F4;
+}
+
+.wrapper a:hover {
+    color: #039BE5;
+}
+
+@media(max-width: 380px) {
+    .wrapper {
+        margin: 30px 20px;
+        padding: 40px 15px 15px 15px;
+    }
+}
+
+
+.heading{
+    background: #000000a8;
+    height: 80px;
+}
+
+.heading h1{
+    padding: 10px;
+    color: white;
+}
+
+.heading h4{
+    color: white;
+}
+.formbg{
+    
+    height: 250px;
+    
+}
+.myform h2{
+    color: white;
+    padding-left:50px;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.myform{
+    padding-top: 50px;
+    
+    justify-content: space-evenly;
+    border: 2px solid white;
+    background-color: #000000a8;
+}
+.inputbox{
+    padding-left:50px;
+    padding-right:50px;
+    
+}
+.landing{
+    margin-left: 50px;
+}
+.landing p{
+    text-align: justify;
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 50px;
+    
+}
+.landing button{
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+}
+.result{
+    height: 100px;
+    width: 300px;
+    background-color: #039BE5;
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.result2{
+    height: 100px;
+    width: 300px;
+    background-color: #039BE5;
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.bnr h2{
+    margin-top: 80px;
+    margin-left: 30px;
+
+}
