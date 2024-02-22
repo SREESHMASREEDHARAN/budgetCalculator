@@ -1,10 +1,10 @@
-function addbank(){
+function register(){
         const register={
-           username:userName.value,
-           acconuntnumber:accNum.value,
-           password:pwd.value,
+           username:uname.value,
+           email:email.value,
+           password:passwd.value,
         }
-        if(register.username==''||register.acconuntnumber==''||register.password==''){
+        if(register.username==''||register.email==''||register.password==''){
            alert("Please fill all the data")
         }
         else{
@@ -13,15 +13,85 @@ function addbank(){
             }
             else{
                localStorage.setItem(register.username,JSON.stringify(register))
+               
                alert("User Added Succesfully")
-               document.getElementById("myform").reset()
-               window.location="./login.html"
+              document.getElementById("myform").reset()
+              window.location.href="./index.html"
+               
             }
        
         }
         
    
 } 
+
+// function register(){
+//     email=document.getElementById("email").value
+//     uname=document.getElementById("uname").value
+//     passwd=document.getElementById("passwd").value
+//     console.log(email);
+//     if(email=='' || uname=='' || passwd==''){
+//         alert("Enter All Fields")
+//     }
+//     else{
+//         if(email in localStorage){
+//             alert("User email Already registered")
+//         }
+//         else{
+//             const userobj={
+//                     uname:uname,
+//                     passwd:passwd,
+//                     email:email,
+//                     income:0,
+//                     expense:0,
+//                     incomeArray:[],
+//                     expenseArray:[]
+
+//             }
+//             localStorage.setItem(uname,JSON.stringify(userobj))
+//             alert("User Registered Successfully")
+//             let modal=document.getElementById("exampleModal")
+//             window.location='./index.html';
+
+//         }
+//     }
+// }
+
+// // login
+// function login(event){
+//     event.preventDefault();
+//     let username=document.getElementById("loginUsername").value
+//     let password=document.getElementById("loginPassword").value
+
+//     if(loginUsername=='' || loginPassword==''){
+//         alert("Enter all fields")
+//     }
+//     else{
+//         if(username in localStorage){
+            
+//             let newobj=JSON.parse(localStorage.getItem(username));
+//             console.log(newobj);
+//             if(password== newobj.passwd){
+//                 localStorage.setItem('loggedobj',JSON.stringify(newobj))
+//                 localStorage.setItem('loggedkey',username)
+//                 window.location='./home.html'
+//             }
+//             else{
+//                 alert("Wrong Password: login failed")
+//                 document.getElementById("formlogin").reset()
+//             }
+            
+
+//         }
+//         else{
+//             alert("User Does not exist, Please register")
+//         }
+//     }
+// }
+
+
+
+
 // var user = {
 //     username: username,
 //     password: password
